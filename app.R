@@ -25,14 +25,13 @@ shinyApp(
         # Application title
         titlePanel("Harvard Business Review: WordCloud"),
         
-        # Sidebar with a slider input for number of bins
         sidebarLayout(
             sidebarPanel(
                 textOutput("print"),
                 tags$style(type="text/css", "#print {white-space: pre-wrap;}")
             ),
             
-            # Show a plot of the generated distribution
+            # Show a plot of the generated wordcloud
             mainPanel(
                 wordcloud2Output("my_wc")
             )
